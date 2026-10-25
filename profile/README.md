@@ -17,6 +17,16 @@
 
 ## 公開專案
 
+### 🧩 [AIR｜AI 程式碼重構規範套件](https://github.com/NCHU-Orange-Lab/AIR)
+
+協助 AI 將 Python 專案逐步重構成分層架構，透過架構規則、工具 hooks 與 Git commit 前檢查，讓後續開發持續遵守規範。
+
+- **分階段重構**：從安裝、分析與計畫，到建立分層、逐批遷移及驗收，每個階段由使用者確認後推進。
+- **架構檢查**：區分組裝、流程、純邏輯、第三方工具、資料讀寫與跨層介面，檢查違規並提供修正提示。
+- **使用環境**：目前支援 Python 專案，需要 Python 3.11 以上與 Git；提供 Claude Code 與 Codex 的工具接點。
+
+[閱讀使用說明](https://github.com/NCHU-Orange-Lab/AIR#readme) · [查看版本](https://github.com/NCHU-Orange-Lab/AIR/releases) · [回報問題](https://github.com/NCHU-Orange-Lab/AIR/issues)
+
 ### 🛒 [智慧點餐系統｜Smart Ordering System](https://github.com/NCHU-Orange-Lab/smart-ordering-system)
 
 供技職學校教學使用的本機智慧點餐系統專案，使用 React、Django、MySQL、Docker 與 Gemini CLI。
