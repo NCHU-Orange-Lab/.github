@@ -35,6 +35,26 @@
 - **學習實作**：從專案程式碼與文件了解系統的組成。
 - **回報問題**：透過專案的 [Issues](https://github.com/NCHU-Orange-Lab/smart-ordering-system/issues) 提出問題或建議。
 
+### 🏓 [AICUP 2025 桌球智慧球拍資料分析｜金牌解決方案](https://github.com/NCHU-Orange-Lab/AICUP2025-Gold-Medal-Solution)
+
+AICUP 2025 春季賽「桌球智慧球拍資料的精準分析競賽」的金牌解決方案，Private leaderboard 第 1 名（Private score 0.840163）。
+
+- **任務**：用球拍上的 6 軸感測資料（3 軸加速度、3 軸角速度），預測選手的性別、持拍手、球齡與等級。
+- **方法**：結合 TSFEL、多尺度、進階訊號、揮拍動作與 CNN 特徵，再做特徵組合（交互項、比值、差值），經 SMOTE 與三階段特徵篩選後，以 XGBoost 訓練最終模型。
+- **重現結果**：提供比賽時的特徵快取與模型，可直接重現當時的提交檔，也可從原始資料重新計算。
+
+[閱讀使用說明](https://github.com/NCHU-Orange-Lab/AICUP2025-Gold-Medal-Solution#readme) · [詳細用法與參數](https://github.com/NCHU-Orange-Lab/AICUP2025-Gold-Medal-Solution/blob/main/USAGE.md)
+
+### 🏸 [TrackNetV3｜加入注意力機制的羽球追蹤網路](https://github.com/NCHU-Orange-Lab/TrackNetV3)
+
+以 TrackNetV2 為基礎改進的羽球軌跡追蹤網路，是第一個在 TrackNet 中使用注意力機制（Attention）的版本。
+
+- **成果**：在相同的小樣本資料集上，準確率從 TrackNetV2 的 88.49% 提升到 90.53%。
+- **完整流程**：從影片標註、資料集格式轉換、模型訓練與預測，到軌跡去雜訊、平滑化及擊球時刻偵測。
+- **使用環境**：以 PyTorch 為主，需要 NVIDIA 顯示卡（CUDA）；支援 Windows 與 Linux。
+
+[閱讀使用說明](https://github.com/NCHU-Orange-Lab/TrackNetV3#readme)
+
 [查看所有公開儲存庫 →](https://github.com/orgs/NCHU-Orange-Lab/repositories)
 
 ## 參與專案
