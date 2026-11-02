@@ -3,7 +3,7 @@
 # 🍊 NCHU Orange Lab
 ### 中興大學橘子實驗室
 
-歡迎來到 NCHU Orange Lab 的 GitHub。
+歡迎來到 NCHU Orange Lab 的 GitHub。(NCHU MIS AIA Lab)
 
 [探索專案](https://github.com/orgs/NCHU-Orange-Lab/repositories) · [聯絡我們](mailto:nchumisaia@gmail.com)
 
