@@ -21,7 +21,7 @@
 |------|------|
 | 🏆 [競賽成果](#-競賽成果) | AICUP 2025 金牌解決方案、AI CUP 2026 桌球戰術預測、AI CUP 2025 桌球智慧球拍分析、AI CUP 2024 太陽能發電量預測、AI CUP 心臟 CT 分割流程 |
 | 🔬 [研究](#-研究) | 形式化證明搜尋的語意對齊、TrackNetV3 |
-| 🧰 [工具與應用](#-工具與應用) | AIR、消費行為洞察平台、GemmaFit、Simple QA Generator |
+| 🧰 [工具與應用](#-工具與應用) | AIR、消費行為洞察平台、GemmaFit、Simple QA Generator、Soundcore Desk |
 | 📚 [教學與範本](#-教學與範本) | 智慧點餐系統、中興大學 LaTeX 論文模板 |
 
 ### 🏆 競賽成果
@@ -122,7 +122,7 @@ AI CUP 2024「根據區域微氣候資料預測發電量競賽」排名 8/500 �
 
 #### 🏋️ [GemmaFit｜在手機本機執行的運動動作教練](https://github.com/NCHU-Orange-Lab/GemmaFit)
 
-為 Kaggle 的 Gemma 4 競賽開發的 Android App，以單鏡頭姿態辨識分析運動動作並給出回饋，再由手機上的 Gemma 4 模型撰寫訓練摘要；無法判斷的情況會明確說明，也不做醫療診斷。
+Android App，以單鏡頭姿態辨識分析運動動作並給出回饋，再由手機上的 Gemma 4 模型撰寫訓練摘要；無法判斷的情況會明確說明，也不做醫療診斷。
 
 - **方法**：用 MediaPipe Pose 分析鏡頭或影片中的動作，即時回饋由確定性（deterministic）規則產生，摘要則交給手機本機的 Gemma-4-E2B-it 模型（LiteRT-LM）撰寫。
 - **可靠性**：App 會檢查模型輸出的格式與引用的證據，不符合時改用備援摘要；在受限解碼下連續 100 次測試，輸出的 JSON 都能成功解析。
@@ -139,6 +139,16 @@ AI CUP 2024「根據區域微氣候資料預測發電量競賽」排名 8/500 �
 - **使用環境**：Python 3.11 以上、Streamlit 網頁介面，需要 OpenAI API 金鑰（或相容的 API 服務），可自訂模型與提示詞（prompt）。
 
 [閱讀使用說明](https://github.com/NCHU-Orange-Lab/Simple-QA-Generator#readme) · [中文說明](https://github.com/NCHU-Orange-Lab/Simple-QA-Generator/blob/master/README_zh.md)
+
+#### 🔊 [Soundcore Desk｜藍牙喇叭控制與 4 聲道環繞](https://github.com/NCHU-Orange-Lab/anker-soundcore-glow-mini-7.1-Surround-Sound)
+
+控制 soundcore Glow Mini（型號 A3136）藍牙喇叭的 Windows 桌面程式，介面為繁體中文。這是獨立開發的工具，不是 Anker 官方程式。
+
+- **喇叭控制**：每顆喇叭一張卡片，可各自調音量、靜音，查看電量、充電狀態、韌體與序號，並開關 PartyCast。
+- **4 聲道環繞**：把兩組 TWS 喇叭組成前後 4 聲道，將電腦播放的 5.1／7.1 聲音拆成前左、前右、後左、後右；一般立體聲音樂也能用「擴展環繞」以短時傅立葉轉換（STFT）分離出環境聲送到後方。
+- **使用環境**：Windows 10／11 與 .NET Framework 4.8，只用系統內建元件、不連網路；4 聲道環繞另外需要免費的虛擬音效驅動程式 VB-CABLE。
+
+[閱讀使用說明](https://github.com/NCHU-Orange-Lab/anker-soundcore-glow-mini-7.1-Surround-Sound#readme) · [協定研究紀錄](https://github.com/NCHU-Orange-Lab/anker-soundcore-glow-mini-7.1-Surround-Sound/blob/main/research/README.md)
 
 ### 📚 教學與範本
 
